@@ -1,0 +1,7 @@
+const {performance} = require('perf_hooks')
+tIni = performance.now()
+const sat = require('sat')
+console.log("isSat: " + sat.solve('NOMEDOARQUIVO.cnf').isSat)
+console.log("Solution: " + sat.solve('NOMEDOARQUIVO.cnf').satisfyingAssignment)
+tFin = performance.now()
+console.log("Time:" + ((tFin - tIni)/1000))
