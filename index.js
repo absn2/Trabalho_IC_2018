@@ -1,7 +1,7 @@
 const { performance } = require('perf_hooks')
 tIni = performance.now()
 const sat = require('sat')
-let solved = sat.solve('hole5.cnf')
+let solved = sat.solve('NOMEDOARQUIVO.cnf')
 console.log("isSat: " + solved.isSat)
 console.log("Solution: " + solved.satisfyingAssignment)
 tFin = performance.now()
